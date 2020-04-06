@@ -15,6 +15,10 @@ jobs:
     steps:
     - uses: actions/checkout@v2
       
-    - name: Display the location
+    - name: Run PSCore cmdlet
       shell: pwsh
       run: ls
+      
+    - name: Run PSCore script from repo
+      shell: pwsh
+      run: https://raw.githubusercontent.com/jdmsft/changelog/master/.github/workflows/scripts/helloworld.ps1
