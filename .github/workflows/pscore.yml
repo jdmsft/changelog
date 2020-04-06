@@ -19,9 +19,10 @@ jobs:
       shell: pwsh
       run: ls
     
-    - name: Run PSCore cmdlet (EnvVar)
-      shell: pwsh
-      run: ls "env:"
+    - name: Run bash command (EnvVar)
+      shell: bash
+      run: env
+      
       
     - name: Run PSCore script from repo
       shell: pwsh
