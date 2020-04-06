@@ -21,7 +21,7 @@ jobs:
     
     - name: Run PSCore cmdlet with EnvVar
       shell: pwsh
-      run: Get-PSDrive
+      run: ls env:
       
     - name: Run PSCore script from repo
       shell: pwsh
