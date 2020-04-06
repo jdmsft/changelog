@@ -18,6 +18,10 @@ jobs:
     - name: Run PSCore cmdlet
       shell: pwsh
       run: ls
+    
+    - name: Run PSCore cmdlet with EnvVar
+      shell: pwsh
+      run: "ls env:"
       
     - name: Run PSCore script from repo
       shell: pwsh
